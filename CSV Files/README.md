@@ -1,4 +1,4 @@
-# Instructions
+# Data Preprocesssing Instructions
 
 For the Data Collection preprocessing work, we will want to get the raw data and get the mean of every 2 rows. We combine every 2 rows as we collect 2 samples per second and from mimicing the work of a kaggle dataset for driving behavior where they also got the mean and collected 2 samples per second.
 
