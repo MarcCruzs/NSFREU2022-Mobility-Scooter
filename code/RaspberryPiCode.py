@@ -94,7 +94,6 @@ sense.stick.direction_down = pushed_down
 
 timestamp = datetime.now()
 timestart = datetime.now()
-delay = 1000
 
 with open(csvname,'w', newline='') as f:
     data_writer = writer(f)
