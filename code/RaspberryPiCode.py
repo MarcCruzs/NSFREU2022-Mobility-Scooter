@@ -6,6 +6,8 @@ import sys
 from time import sleep
 import os
 
+'''Change "csvname" to whatever day and run # that day is on. Do this manually as its faster to change manually
+than automatically'''
 csvname = "June23_Run_0.csv"
 
 
@@ -14,6 +16,7 @@ sense.set_imu_config(True, True, True)
 sense.clear()
 logging = False
 
+#This function handles obtaining the raw acceleration and raw gyroscope data
 def get_Data():
     s_data = []
     acceleration = sense.get_accelerometer_raw()
@@ -45,12 +48,14 @@ def get_Data():
     s_data.append(datetime.now())
     sleep(.5)
     return s_data
-
+'''To make it easier on the field, every time the 'start' switch is flicked the sense hat rgb grid will turn green, while
+the 'stop' switch is flicked the sense hat rgb grid turns red. Do note when stopping the code it will keep the same
+color that is being displayed at the time of stopping the code'''
 g = (0, 255, 0)     # green
 r = (255, 0, 0)     # red
 
 
-green = [ # >_< ._.
+green = [
     g, g, g, g, g, g, g, g,
     g, g, g, g, g, g, g, g,
     g, g, g, g, g, g, g, g,
@@ -63,7 +68,7 @@ green = [ # >_< ._.
 
 
 
-red = [ # >_< ._.
+red = [
     r, r, r, r, r, r, r, r,
     r, r, r, r, r, r, r, r,
     r, r, r, r, r, r, r, r,
@@ -92,6 +97,9 @@ def pushed_down(event):
 sense.stick.direction_up = pushed_up
 sense.stick.direction_down = pushed_down
 
+#Added timestamp to do better labelling
+#Note: elapse time can start at random number sometimes. So it can start on the 1000 second or on the 20 second.
+#To fix this issue would match the elapse time with the corresponding helmet view recording.
 timestamp = datetime.now()
 timestart = datetime.now()
 
@@ -99,6 +107,7 @@ with open(csvname,'w', newline='') as f:
     data_writer = writer(f)
     data_writer.writerow(['acc_x','acc_y','acc_z','gyro_x','gyro_y','gyro_z','datetime','elapsed'])
 
+#Constantly uploading data until the raspberry pi is stopped.
     while True:
         if logging:
             data = get_Data()
