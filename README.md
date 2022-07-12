@@ -19,7 +19,7 @@ to convert json file to csv file
   - *Kaggle Dataset Folder* is just one combined dataset of all featured csv files that were given in the dataset. (Go to folder for more details)
   
 ### Code
-=====
+======
 - Contains all code used in the NSF REU 2022. 
 
 ### Raspberry Pi 4 to EDUROAM Folder
