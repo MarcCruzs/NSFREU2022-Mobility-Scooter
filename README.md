@@ -16,8 +16,8 @@ to convert json file to csv file
   - *NSF REU Folder* is organized by each day data collection occurred. Each Date Folder contains the corresponding csv files that were recorded that day and details on who was driver that day
   - *Kaggle Dataset Folder* is just one combined dataset of all featured csv files that were given in the dataset. (Go to folder for more details)
   
-###Code
+###**Code**
 - Contains all code used in the NSF REU 2022. 
 
-###Raspberry Pi 4 to EDUROAM Folder
+###**Raspberry Pi 4 to EDUROAM Folder**
 - Instructions to get EDUROAM wifi onto the Raspberry Pi 4 
