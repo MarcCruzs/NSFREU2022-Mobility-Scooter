@@ -1,6 +1,7 @@
 # NSFREU2022-Mobility-Scooter
 
 ## Summary
+-----
 The focus for NSF REU Summer 2022 is to make the steps to create a multi-modal model that is capable of predicting the a binary/percentage riskiness if an individual should use a Mobility Scooter. The multi-modal would contain accelerometer, gyroscope, and heart rate data.
 
 ### Extracting Heart Rate Data
