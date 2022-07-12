@@ -15,7 +15,7 @@ to convert json file to csv file
 - Two Folders containing NSF REU csv files and a Kaggle Dataset csv file.
   - *NSF REU Folder* is organized by each day data collection occurred. Each Date Folder contains the corresponding csv files that were recorded that day and details on who was driver that day
   - *Kaggle Dataset Folder* is just one combined dataset of all featured csv files that were given in the dataset. (Go to folder for more details)
-
+  
 ###Code
 - Contains all code used in the NSF REU 2022. 
 
