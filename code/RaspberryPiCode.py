@@ -10,6 +10,10 @@ import os
 than automatically'''
 csvname = "June23_Run_0.csv"
 
+Check = os.path.exists(csvname)
+if Check:
+    print('Name already Exists')
+    exit()
 
 sense = SenseHat()
 sense.set_imu_config(True, True, True)
@@ -51,10 +55,10 @@ def get_Data():
 '''To make it easier on the field, every time the 'start' switch is flicked the sense hat rgb grid will turn green, while
 the 'stop' switch is flicked the sense hat rgb grid turns red. Do note when stopping the code it will keep the same
 color that is being displayed at the time of stopping the code'''
-g = (0, 255, 0)     # green
-r = (255, 0, 0)     # red
+g = (0, 255, 0) # green
+r = (255, 0, 0) # red
 
-
+'''To use the 8x8 grid on the sense hat attached to the raspberry pi need to use an array that mimics the 8x8 size.'''
 green = [
     g, g, g, g, g, g, g, g,
     g, g, g, g, g, g, g, g,
@@ -65,8 +69,6 @@ green = [
     g, g, g, g, g, g, g, g,
     g, g, g, g, g, g, g, g,
     ]
-
-
 
 red = [
     r, r, r, r, r, r, r, r,
