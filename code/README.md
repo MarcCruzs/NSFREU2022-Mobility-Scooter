@@ -9,5 +9,8 @@ Both python scripts are two different machine learning models using the same csv
 can be used to filter labelled csv files to separate the labels into 5 csv files that correspond to each class label (Sudden Acceleration, Sudden Left Turn, Sudden Right Turn, Sudden Break, and Normal). 
 - [**RaspberryPiCode.py**](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/code/RaspberryPiCode.py)
 is used in thonny python IDE in the raspberry pi 4 with sensor hat that allows recording of Accelerometer and Gyroscope data 
-- [**HeartRate.py**](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/code/HeartRate.py) used to convert and organize json file for Polar H9 heart rate sensor
+- [**HeartRate.py**](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/code/HeartRate.py) used to 
+convert and organize json file for Polar H9 heart rate sensor. At the moment the Polar heart rate sensor has
+a way to quickly export a csv file without the need for this code. If anything this is more if you can only
+extract json file and not the csv file then use this code. 
 
