@@ -1,0 +1,5 @@
+﻿,,,,,,,,Row #,acc_x,acc_y,acc_z,gyro_x,gyro_y,gyro_z,datetime,IGNORE,Elapsed,Label
+`,,,,,,,,1,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,00:00.0,0,0,
+"Copy and paste the content on the right to the csv file you are trying to process
+Note: Before processing remember to remove the time before actual run starts first and
+time after the run ends",,,,,,,,,,,,,,,,,,
