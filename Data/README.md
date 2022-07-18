@@ -9,20 +9,24 @@ Steps:
 *Sudden Acceleration* (1), *Sudden Right Turn* (2), *Sudden Left Turn* (3), *Sudden Break* (4), and *Normal* (5)
 
 3. Create a table in app (ex: excel, doc, word, etc) with label (1 Sudden Acceleration) (2 Sudden Right) (3 Sudden Left) (4 Sudden Break) (5 Normal) 
+
 4. Watch the entire video that correspond with the specific run, 
     1) Record the time stamp of each abnormaties under corresponding labels
     2) Record the time it takes for the Rasberry Pi to be turned on (Ex: after video starts, it takes 15 seconds until the Rasberry Pi starts)
     3) Record the starting time (where the scooter starts moving forward)
     4) Record the ending time (where the scooter completely stops)
-5. Copy and paste the CSV data into the data template (in 
+    5) Record the time of segments where the direction or labeling will be unclear (Ex: Moving backwards, unsure if driver did a left or sudden left, etc)
 
+5. Prepare for labeling 
+    1) Copy and paste the CSV data into the data template (in Processed CSV Files folder) 
+    2) Select the columns (Row #	acc_x	acc_y	acc_z	gyro_x	gyro_y	gyro_z	datetime	IGNORE	Elapsed) and drag them down to bottom of data set
+    3) Add a 5 under the Labels and drag it down until the end of the data set
+    4) Double click the function under Elapsed Time label and add the time it takes for Rasberry Pi to be turned on at the end of the function (Ex: If it takes 15 seconds for the Rasberry Pi to be started, at the function make =OFFSET(Q2,ROW(I2)-1,0) into =OFFSET(Q2,ROW(I2)-1,0)+15)
+    5) Delete or grey out the extra labels at the start (from start of Rasberry Pi to the start of scooter moving) 
+    6) Delete or grey out the extra labels at the end (from the moment scooter completly stops to the end of the data set)
+    7) Delete or grey out the segments of labels where the labeling will be unclear based on step 4 
 
-
-
-
-3. Go to the video, check when the data collection actually starts (driver starts moving), then see what the stop watch on the video is at. Whatever time it is on get rid of the rows that correspond to that time. For example, if the driver starts moving 31 seconds in then in the CSV file remove all the rows that corresponds to the first 32 seconds. Why rows relating to 32 seconds and not just 31? Later on it would become an issue when averaging the data, so as best as you can keep the data even
-4. Do step #3 except at the end of the video. Discard any data after the data collection is done (driver stops driving).
-5. With the CSV file get the mean of every 2 rows for all columns except *Time Stamp* & *Time Elapsed*
-6. Then with the dataset that was averaged label each row with the 5 Class Labels by checking the video and seeing at what times a class label occurs. (ex. driver at 21-23 seconds does a sudden right turn, label the rows corresponding to 21-23 seconds)
-7. For rows (samples, instances, or etc [There is a lot of interchangeable words]) that is hard to determine what class label the row should be then just discard that row and move on. Any uncertainty can ruin the quality of the data.
-8. With the CSV File, add it back into the original folder you got the csv file from and name it: **[Orginal Name]_Processed.csv**
+6. Label the labels column with corresponding numbers based on time stamp from table made in step 3 and elapsed time (Ex: In table it says a sudden left from 78 seconds to 82 seconds, label 3 from 78 to 82) 
+    1) Round down if elapsed time is a decimal
+    
+7. Save the finished CSV file and upload it into the Procssed CSV Files folder name it **PR_[Original Name].csv**
