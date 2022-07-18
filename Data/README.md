@@ -8,6 +8,18 @@ Steps:
 
 *Sudden Acceleration* (1), *Sudden Right Turn* (2), *Sudden Left Turn* (3), *Sudden Break* (4), and *Normal* (5)
 
+3. Create a table in app (ex: excel, doc, word, etc) with label (1 Sudden Acceleration) (2 Sudden Right) (3 Sudden Left) (4 Sudden Break) (5 Normal) 
+4. Watch the entire video that correspond with the specific run, 
+    1) Record the time stamp of each abnormaties under corresponding labels
+    2) Record the time it takes for the Rasberry Pi to be turned on (Ex: after video starts, it takes 15 seconds until the Rasberry Pi starts)
+    3) Record the starting time (where the scooter starts moving forward)
+    4) Record the ending time (where the scooter completely stops)
+5. Copy and paste the CSV data into the data template (in 
+
+
+
+
+
 3. Go to the video, check when the data collection actually starts (driver starts moving), then see what the stop watch on the video is at. Whatever time it is on get rid of the rows that correspond to that time. For example, if the driver starts moving 31 seconds in then in the CSV file remove all the rows that corresponds to the first 32 seconds. Why rows relating to 32 seconds and not just 31? Later on it would become an issue when averaging the data, so as best as you can keep the data even
 4. Do step #3 except at the end of the video. Discard any data after the data collection is done (driver stops driving).
 5. With the CSV file get the mean of every 2 rows for all columns except *Time Stamp* & *Time Elapsed*
