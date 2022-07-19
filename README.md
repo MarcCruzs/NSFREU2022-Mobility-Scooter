@@ -6,7 +6,7 @@ The focus for NSF REU Summer 2022 is to make the steps to create a multi-modal m
 ### Extracting Heart Rate Data
 - Used Polar H9 Heart Rate Sensor
 - Follow this [link](https://support.polar.com/en/how-to-download-all-your-data-from-polar-flow
-) for instructions\
+) for instructions
 - After downloading zip file, use [HeartRate.py](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/code/HeartRate.py)
 to convert json file to csv file
 
