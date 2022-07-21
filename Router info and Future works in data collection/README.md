@@ -17,7 +17,7 @@ _Raspberry Pi B: 192.168.8.150_
 _Raspberry Pi A: 192.168.8.237_
 Your laptop or phone that has the remote controlled desktop software to connect to those IP address
 
-## Failed Attempts ##
+## Failed Attempts: ##
 
 We tried our attempts on using the "Eduroam" and "CPPGuest" as our common network/accesspoint but this doesn't allow us to use the remote-controlled desktop software due to IT protocols in the campus. Stacking on that problem this doesn't allow us to show IP address. We tried contacting the IT department and creating a ticket on their upper management and labeled it as a "high priority" but this takes alot of time that can be used in data collection. More likely they will not give us a green light to use any of this stuff.
 We used a hotspot as an alternative for router this created complication on the data collection, firstly hotspot aren't stable hence can't be trusted to be "on" all the time and it the phone who started the hotspot needs to be near the two raspberry pi and to see the if those two are running you need to have either a phone or laptop to view them as near as possible to the hotspot. This attempt challeged our physical capabilites to jog or run near the mobility scooter in long amount of time. 
