@@ -11,7 +11,7 @@ For us to collect data of the gyroscope and accelerometer from the raspberry pi 
 
 Download the VNC Viewer and register for an account, once login insert the IP address. If you guys started with a new raspberry pi, please modify the bios system that would enable the VNC viewer. For one to access the bios system of raspberry pi you need to open the terminal and type "-sudo su" and them type "raspiconfig" when you're in the bios system go directly to VNC viewer options.  If those command lines doesn't work please watch this tutorial (Link).
 
-# This below things need to connect to router's wifi on that very top is the info connect #
+## This below things need to connect to router's wifi on that very top is the info connect ##
 _Raspberry Pi B: 192.168.8.150_
 _Raspberry Pi A: 192.168.8.237_
 Your laptop or phone that has the remote controlled desktop software to connect to those IP address
