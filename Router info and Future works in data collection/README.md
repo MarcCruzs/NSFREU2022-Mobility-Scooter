@@ -1,9 +1,13 @@
 
 ****Traveling Router Info : "GL-AR300M-eea-NOR"****
+
 ****Password: "goodlife"****
+
 ****Software to access the two Rasberry Pi: "VNC Viewer"****
+
 	For us to collect data of the gyroscope and accelerometer from the raspberry pi + sensehat the only way we can connect is to use a remote-controlled desktop software so that we can access in real-time to check if the code is running, collecting data and modify the code all at the same time, but it needs a common access point or common network that allow each system to show their IP address. The travelling router makes this stuff easy by allowing us to connect the two raspberry pi without any ethernet cable or any traces of bandwidths, plus factor is that from us we can connect to this router for almost 75 meters - 100 meters. 
-Quick tutorial to VNC Viewer
+	
+#Quick tutorial to VNC Viewer#
 	Download the VNC Viewer and register for an account, once login insert the IP address. If you guys started with a new raspberry pi, please modify the bios system that would enable the VNC viewer. For one to access the bios system of raspberry pi you need to open the terminal and type "-sudo su" and them type "raspiconfig" when you're in the bios system go directly to VNC viewer options.  If those command lines doesn't work please watch this tutorial (Link).
 
 #This below things need to connect to router's wifi on that very top is the info connect#
