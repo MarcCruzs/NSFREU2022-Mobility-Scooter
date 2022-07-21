@@ -30,7 +30,7 @@ and side view of driver so we made it possible to do these recordings).
 ## Details of Data Labeling
 [Details](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/Data/README.md)
 
-### Extracting Heart Rate Data
+## Extracting Heart Rate Data
 - Used Polar H9 Heart Rate Sensor
 - Make an account with Polar then go to [Diary](https://flow.polar.com/diary)  sub-section.
 In this section it allows you to go to individual runs and extract csv
@@ -41,18 +41,18 @@ In this section it allows you to go to individual runs and extract csv
 - After downloading zip file, use [HeartRate.py](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/code/HeartRate.py)
 to convert json file to csv file
 
-### Data Folder
+## Data Folder
 - Data Folder contains all csv files that were used to output accelerometer, gyroscope, and heart rate data.
 - Two Folders containing NSF REU csv files and a Kaggle Dataset csv file.
   - *[NSF REU Folder](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/tree/main/Data/NSF%20REU%202022%20Data%20Collection)* is organized by each day data collection occurred. Each Date Folder contains the corresponding csv files that were recorded that day and details on who was driver that day
   - *[Kaggle Dataset Folder](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/tree/main/Data/Kaggle%20Driving%20Behavior%20Dataset)* is just one combined dataset of all featured csv files that were given in the dataset. (Go to folder for more details)
   
-### Code Folder
+## Code Folder
 - Contains all code used in the NSF REU 2022. 
 
-### Router Info
+## Router Info
 - Explains how to use the router and how it was used to connected to Raspberry Pis to do
 VNC viewer
 
-### Raspberry Pi 4 to EDUROAM Folder
+## Raspberry Pi 4 to EDUROAM Folder
 - Instructions to get EDUROAM wifi onto the Raspberry Pi 4
