@@ -3,7 +3,7 @@
 ## Summary
 The focus for NSF REU Summer 2022 is to make the steps to create a multi-modal model that is capable of predicting the a binary/percentage riskiness if an individual should use a Mobility Scooter. The multi-modal would contain accelerometer, gyroscope, and heart rate data.
 
-## Github Organization
+## GitHub Organization
 While making this realized some individuals like finding relevant instructions/details 
 based on what folder its in (ex. Data collection instructions in the data folder), but if
 you want to simply Find Command (Ctrl + F) everything then just look into TOC.md. Wanted
@@ -43,6 +43,7 @@ Obviously better way to do it, but due to the dynamics of our group just knowing
 move things fast in discord we just stuck to this method.
 
 ## Equipment used for Data Collection
+### Cameras
 Used 2 Raspberry Pi 4 models with sensor hat to collect Accelerometer and Gyroscope Data
 In the NSF REU, we referenced the 2 Raspberry Pis as **"Raspberry Pi A"** & **"Raspberry Pi B."** \
 Raspberry Pi A is the one that was placed on the front part of the Mobility Scooter, while
@@ -65,6 +66,25 @@ allows a person to use to label the CSV files**
 
 The other two cameras are used for kinesiology group to identify driver body movement. Included these cameras to just prep for the data collection. Not really using it yet in the models (They asked for a front
 and side view of driver so we made it possible to do these recordings).
+
+### Raspberry Pi
+Have 2 Raspberry Pis: **Raspberry Pi A & Raspberry Pi B**\
+
+**Raspberry Pi A** is the Pi mounted to the front section of the mobility scooter\
+**Raspberry Pi B** is the Pi mounted to the back section of the mobility scooter
+
+Each Raspberry Pi has its own portable battery. Although Raspberry Pi B shares the battery
+with wireless router. Everything can be attached to the mobility scooter with velcro except
+wireless router.
+
+# Extracting recordings from Action Cameras
+Will need a micro SD card reader. In the supplies there are 2-3 micro SD card readers, but
+they are flimsy and one of them does not work well. I recommend using a personal one to read
+the micro SD cards from the Action Cameras.
+
+We made use of the School's personal One Drives. (If you need access of the recordings 
+from REU 2022, please contact Dr. Chen. She can forward you to owner of the one drive
+containing the recordings)
 
 ## Details of Data Labeling
 [Details](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/Data/README.md)
@@ -96,3 +116,13 @@ VNC viewer
 ## Raspberry Pi 4 to EDUROAM Folder
 - Instructions to get EDUROAM wifi onto the Raspberry Pi 4
 
+## Failed Attempts
+While trying to optimize data collection, we ran into red tape.
+- Can not use drones as the school is a no-fly zone. 
+- Using VNC viewer on the school internet will not work unless you go through the IT
+department. If this is at the start of a new group I recommend to tackly this issue as soon
+as possible to make it easier for the time you will have on this project.
+- Helmets from the mobility clinic are kid sizes, so will not work for individuals with
+large heads.
+- Cheap paint is not a good way to make a rough surface for sticking velcro onto. Did
+this cause velcro sticky part does not stay on smooth surfaces. 
