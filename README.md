@@ -3,7 +3,13 @@
 ## Summary
 The focus for NSF REU Summer 2022 is to make the steps to create a multi-modal model that is capable of predicting the a binary/percentage riskiness if an individual should use a Mobility Scooter. The multi-modal would contain accelerometer, gyroscope, and heart rate data.
 
-## Details of Data Collection
+## Github Organization
+While making this realized some individuals like finding relevant instructions/details 
+based on what folder its in (ex. Data collection instructions in the data folder), but if
+you want to simply Find Command (Ctrl + F) everything then just look into TOC.md. Wanted
+to note this out of convenience -Marc
+
+## Equipment used for Data Collection
 Used 2 Raspberry Pi 4 models with sensor hat to collect Accelerometer and Gyroscope Data
 In the NSF REU, we referenced the 2 Raspberry Pis as **"Raspberry Pi A"** & **"Raspberry Pi B."** \
 Raspberry Pi A is the one that was placed on the front part of the Mobility Scooter, while
