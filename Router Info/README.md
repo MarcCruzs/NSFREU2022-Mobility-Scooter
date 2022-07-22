@@ -13,31 +13,38 @@ collecting data and to modify the code
 all at the same time. But it needs a common access point or common network that allow 
 each system to show their IP address. The wireless router makes this stuff easy by 
 allowing us to connect the two raspberry pis without any ethernet cable, any traces 
-of bandwidths, and will not need a portable monitor.
-- NOTE: can connect to this router from around 75 meters - 100 meters.	
+of bandwidths, and will not need a portable monitor.\
+**NOTE: Can be decently far from raspberry pis. Max distance is around 75 meters - 100 meters.**
 ## Quick tutorial to VNC Viewer ##
 
 Download the [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) and register for an account, once login insert the IP address. If you guys started with a new raspberry pi, please modify the bios system that would enable the VNC viewer. For one to access the bios system of raspberry pi you need to open the terminal and type "-sudo su" and them type "raspiconfig" when you're in the bios system go directly to VNC viewer options.  If those command lines doesn't work please watch this tutorial (Link).
 
-## This below things need to connect to router's wifi on that very top is the info connect ##
+## Connecting Raspberry Pis to VNC Viewer
+After connecting to the wireless router wifi, go to VNC viewer software on laptop or phone and type
+in IP addresses:
 _Raspberry Pi B: 192.168.8.150_\
 _Raspberry Pi A: 192.168.8.237_\
-Your laptop or phone that has the remote controlled desktop software to connect to those IP address
+If these IP addresses do not work. Go to the command line and hostname -I and that should give
+the address when connected to the router wifi.
+**NOTE: Laptop can log into both raspberry pi desktops at the same time, while the phone can
+only do it one at a time**
 
 ## Failed Attempts: ##
 
 We tried our attempts on using the "Eduroam" and "CPPGuest" as our common 
 network/accesspoint but this doesn't allow us to use the remote-controlled desktop 
-software due to IT protocols in the campus. Stacking on that problem this doesn't 
+software due to IT protocols in the campus. Stacking onto this problem, it doesn't 
 allow us to show IP address. We tried contacting the IT department and creating a 
 ticket on their upper management and labeled it as a "high priority" but this takes 
 alot of time that can be used in data collection. More likely they will not give us a 
-green light to use any of this stuff.
-We used a hotspot as an alternative for router this created complication on the 
+green light to use any of this stuff. (View Future Works. This can be resolved faster during
+the semester)\
+
+We used a hotspot as an alternative from the router. This created complications in the 
 data collection, firstly hotspot aren't stable hence can't be trusted to be "on" 
 all the time and if the phone who started the hotspot needs to be near the two 
 raspberry pi and to see the if those two are running you need to have either a 
-phone or laptop to view them as near as possible to the hotspot. This attempt challenged 
+phone or laptop to view them to be connected and near the hotspot. This attempt challenged 
 our physical capabilities to jog or run near the mobility scooter in long amount of time. 
 
 ## WARNING: Things to Keep in Mind ##
