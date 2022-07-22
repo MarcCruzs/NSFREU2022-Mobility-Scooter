@@ -52,7 +52,8 @@ Raspberry Pi B was placed on the back part of the Mobility Scooter (Photo Refere
 
 Used 2 Action Cameras (bootleg "GoPros") and a phone camera attached to a gimbal.
 - One Action Camera is used on the side view. Using a clamp that is attached to a part of the
-arm rest (Image for reference). 
+arm rest (Image for reference). \
+![Image Link](https://github.com/MarcCruzs/NSFREU2022-Mobility-Scooter/blob/main/DSC_0001-2.jpg)
 - The Helmet View Action Camera has a band that can be put on and angled in a way to see the
 drivers hands and steering wheel.
 - Phone Camera used as a front view. Attached to a gimbal to get the phone camera to follow the
