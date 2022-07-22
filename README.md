@@ -9,6 +9,39 @@ based on what folder its in (ex. Data collection instructions in the data folder
 you want to simply Find Command (Ctrl + F) everything then just look into TOC.md. Wanted
 to note this out of convenience -Marc
 
+## Future Work
+Issues that prevailed in the project that were not resolved as they were deemed just minor
+inconveniences. Problems stated here are fixable issues that can help make different
+stages in the project faster. I recommend looking over the issues to see if there is
+spare time to fix any of the problems
+- _**Gimbal needs stiffer extender:**_\
+Gimbal may need stiffer extender as while doing data collection, it lowers if the driver
+is a bit rougher, so a permanent issue is needed. We (SUM 2022 peeps) used chopsticks
+to prop it up, but obviously that is not the best solution to be made.
+- _**Raspberry Pi inconsistent data collection frequency:**_\
+For the data collection, there was 2 raspberry pis we collected from. We tried to compare
+the data that was collected together, but an issue that occurred is that Raspberry Pi B (the pi
+that was put on the back of the Mobility Scooter) frequency of collecting data inconsistently
+changes from 1.0 seconds to 1.1 seconds. While the other raspberry pi, is consistent with 1.1 seconds.
+This leads to difficulty to align rows of data as each row should be relatively the same
+time stamp but are not as one dataset time stamps lags behind the other. So have to do 
+extra work to find the right rows that have similar time stamp.
+- _**Improving attachments of side view GoPro:**_\
+At the moment we used a lot of blue tape mixed with spoons,forks and arc shaped objective to
+make a splint to keep the side view camera from moving too much.
+- _**Front Camera View attachments:**_\
+Similar issue with Side View as it was not 100% stable as we taped a gimbal into the basket
+- _**Optimizing Data Collection Code:**_\
+The code that creates a csv file and inputs Accelerometer and Gyroscope data is decent
+But have to stop, modify and start code after each run. What we modify is the name of csv
+file name. Code can be improved by automating naming of csv files. Usually we just change 
+a number (ex. July27_Run_0 to July27_Run_1), so this can be automated.
+- _**Method to make transferring csv files to where they need to be:**_\
+How the csv files are extracted from the raspberry pis is through discord. We just shove
+all the files from that day into a discord channel then later move it into the github. 
+Obviously better way to do it, but due to the dynamics of our group just knowing how to 
+move things fast in discord we just stuck to this method.
+
 ## Equipment used for Data Collection
 Used 2 Raspberry Pi 4 models with sensor hat to collect Accelerometer and Gyroscope Data
 In the NSF REU, we referenced the 2 Raspberry Pis as **"Raspberry Pi A"** & **"Raspberry Pi B."** \
@@ -16,16 +49,16 @@ Raspberry Pi A is the one that was placed on the front part of the Mobility Scoo
 Raspberry Pi B was placed on the back part of the Mobility Scooter (Photo References of each one)\
 **NOTE: we referenced this in the data collection. As descriptions of files have an *A* or *B* in it.**
 
-Used 2 Action Cameras (bootleg "GoPros") and a phone camera attached to a gimble.
+Used 2 Action Cameras (bootleg "GoPros") and a phone camera attached to a gimbal.
 - One Action Camera is used on the side view. Using a clamp that is attached to a part of the
 arm rest (Image for reference). 
 - The Helmet View Action Camera has a band that can be put on and angled in a way to see the
 drivers hands and steering wheel.
-- Phone Camera used as a front view. Attached to a gimble to get the phone camera to follow the
-body of the driver. (Individuals like leaning on one of the arm chairs or like to move side to side)
+- Phone Camera used as a front view. Attached to a gimbal to get the phone camera to follow the
+body of the driver. (Individuals like leaning on one of the armchairs or like to move side to side)
   - A Gimble "is a pivoted support that permits rotation of an object about an axis" (Google)
     - Name of Gimble we used: **DJI OM5**
-      - NOTE: Can use a different brand. Just referencing what gimble used
+      - NOTE: Can use a different brand. Just referencing what gimbal used
 
 **Essential Camera would be the Helmet View where it shows the hands and the handle that
 allows a person to use to label the CSV files**
@@ -62,3 +95,4 @@ VNC viewer
 
 ## Raspberry Pi 4 to EDUROAM Folder
 - Instructions to get EDUROAM wifi onto the Raspberry Pi 4
+
