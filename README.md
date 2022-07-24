@@ -69,7 +69,7 @@ The other two cameras are used for kinesiology group to identify driver body mov
 and side view of driver so we made it possible to do these recordings).
 
 ### Raspberry Pi
-Have 2 Raspberry Pis: **Raspberry Pi A & Raspberry Pi B**\
+Have 2 Raspberry Pis: **Raspberry Pi A & Raspberry Pi B**
 
 **Raspberry Pi A** is the Pi mounted to the front section of the mobility scooter\
 **Raspberry Pi B** is the Pi mounted to the back section of the mobility scooter
