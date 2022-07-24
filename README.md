@@ -14,11 +14,11 @@ Issues that prevailed in the project that were not resolved as they were deemed 
 inconveniences. Problems stated here are fixable issues that can help make different
 stages in the project faster. I recommend looking over the issues to see if there is
 spare time to fix any of the problems
-- _**Gimbal needs stiffer extender:**_\
+- [ ] _**Gimbal needs stiffer extender:**_\
 Gimbal may need stiffer extender as while doing data collection, it lowers if the driver
 is a bit rougher, so a permanent issue is needed. We (SUM 2022 peeps) used chopsticks
 to prop it up, but obviously that is not the best solution to be made.
-- _**Raspberry Pi inconsistent data collection frequency:**_\
+- [ ] _**Raspberry Pi inconsistent data collection frequency:**_\
 For the data collection, there was 2 raspberry pis we collected from. We tried to compare
 the data that was collected together, but an issue that occurred is that Raspberry Pi B (the pi
 that was put on the back of the Mobility Scooter) frequency of collecting data inconsistently
@@ -26,17 +26,17 @@ changes from 1.0 seconds to 1.1 seconds. While the other raspberry pi, is consis
 This leads to difficulty to align rows of data as each row should be relatively the same
 time stamp but are not as one dataset time stamps lags behind the other. So have to do 
 extra work to find the right rows that have similar time stamp.
-- _**Improving attachments of side view GoPro:**_\
+- [ ] _**Improving attachments of side view GoPro:**_\
 At the moment we used a lot of blue tape mixed with spoons,forks and arc shaped objective to
 make a splint to keep the side view camera from moving too much.
-- _**Front Camera View attachments:**_\
+- [ ] _**Front Camera View attachments:**_\
 Similar issue with Side View as it was not 100% stable as we taped a gimbal into the basket
-- _**Optimizing Data Collection Code:**_\
+- [ ] _**Optimizing Data Collection Code:**_\
 The code that creates a csv file and inputs Accelerometer and Gyroscope data is decent
 But have to stop, modify and start code after each run. What we modify is the name of csv
 file name. Code can be improved by automating naming of csv files. Usually we just change 
 a number (ex. July27_Run_0 to July27_Run_1), so this can be automated.
-- _**Method to make transferring csv files to where they need to be:**_\
+- [ ] _**Method to make transferring csv files to where they need to be:**_\
 How the csv files are extracted from the raspberry pis is through discord. We just shove
 all the files from that day into a discord channel then later move it into the github. 
 Obviously better way to do it, but due to the dynamics of our group just knowing how to 
