@@ -17,7 +17,7 @@ of bandwidths, and will not need a portable monitor.\
 **NOTE: Can be decently far from raspberry pis. Max distance is around 75 meters - 100 meters.**
 ## Quick tutorial to VNC Viewer ##
 
-Download the [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) and register for an account, once login insert the IP address. If you guys started with a new raspberry pi, please modify the bios system that would enable the VNC viewer. For one to access the bios system of raspberry pi you need to open the terminal and type "-sudo su" and them type "raspiconfig" when you're in the bios system go directly to VNC viewer options.  If those command lines doesn't work please watch this tutorial (Link).
+Download the [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) and register for an account, once login insert the IP address. If you guys started with a new raspberry pi, please modify the bios system that would enable the VNC viewer. For one to access the bios system of raspberry pi you need to open the terminal and type "-sudo su" and them type "raspiconfig" when you're in the bios system go directly to VNC viewer options.  If those command lines doesn't work please watch this tutorial (https://youtu.be/IfzBPi4FHpI).
 
 ## Connecting Raspberry Pis to VNC Viewer
 After connecting to the wireless router wifi, go to VNC viewer software on laptop or phone and type
