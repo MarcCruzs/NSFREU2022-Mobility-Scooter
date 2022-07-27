@@ -41,6 +41,11 @@ How the csv files are extracted from the raspberry pis is through discord. We ju
 all the files from that day into a discord channel then later move it into the github. 
 Obviously better way to do it, but due to the dynamics of our group just knowing how to 
 move things fast in discord we just stuck to this method.
+- [ ] _**Code is slow when recording data into CSV file**_\
+When it comes to data collection, at the end of each run up to 15+ seconds of the last
+seconds recorded will not be inputted into the csv file. To avoid this can create a
+conditional in the code where the code is not stopped until all the data is inputted.
+Or at the end of each run simply wait a minute before stopping the raspberry pi. 
 
 ## Equipment used for Data Collection
 ### Cameras
