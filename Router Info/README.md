@@ -25,6 +25,7 @@ in IP addresses:
 
 _Raspberry Pi B: 192.168.8.150_\
 _Raspberry Pi A: 192.168.8.237_\
+
 If these IP addresses do not work. Go to the command line and hostname -I and that should give
 the address when connected to the router wifi.
 **NOTE: Laptop can log into both raspberry pi desktops at the same time, while the phone can
