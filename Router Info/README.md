@@ -22,6 +22,7 @@ Download the [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) a
 ## Connecting Raspberry Pis to VNC Viewer
 After connecting to the wireless router wifi, go to VNC viewer software on laptop or phone and type
 in IP addresses:
+
 _Raspberry Pi B: 192.168.8.150_\
 _Raspberry Pi A: 192.168.8.237_\
 If these IP addresses do not work. Go to the command line and hostname -I and that should give
