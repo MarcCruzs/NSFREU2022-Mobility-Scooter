@@ -1,3 +1,37 @@
+# Data Collecting Instructions
+
+1. To prep the raspberry pis to enable them to run code, need to open thonny and open up the
+accelerometer.py file in the raspberry pi
+
+- Raspberry Pi A accelerometer.py is in desktop>Code
+- Raspberry Pi B accelerometer.py has been reset and need to input RaspberryPiCode.py from this repo
+into this Pi.
+
+2. Then change the name of the csv file name (around line 12 of the code) to the current day and
+run number that you are doing data collection. Then run the code. The code makes use of the
+8x8 grid ontop of the raspberry pi to indicate where it is.
+- Green = Data Collecting
+- Red = Stopped Data Collecting
+- Blue = Ready to Data Collect
+- Yellow with exclamation marks = Didnt change csv file name
+
+3. After running code, it should turn blue to indicate it's ready to start. Then when actually
+ready flick the joystick knob on the raspberry pi up to start data collecting. Then to stop it
+ctrl+c
+
+
+For the data collection, would mount two raspberry pis differentiated and named as "Raspberry Pi A"
+& "Raspberry Pi B." Raspberry Pi A refers to the raspberry pi put at the front of the mobility scooter. While 
+Raspberry pi B refers to the raspberry pi put onto the back of the mobility scooter. How we
+attached it to the mobility scooter is velcro on the raspberry pis and on the mobility scooter.
+Also a seperate velcro spots where the portable batteries are mounted too. **NOTE:** For the 
+wireless router, we simply taped it ontop of the portable battery that is on the back of the
+mobility scooter.
+
+
+
+
+
 # Data Preprocesssing/Labeling Instructions
 
 For the Data Collection preprocessing work, we will want to get the raw data and get the mean of every 2 rows. We combine every 2 rows as we collect 2 samples per second and from mimicing the work of a kaggle dataset for driving behavior where they also got the mean and collected 2 samples per second.

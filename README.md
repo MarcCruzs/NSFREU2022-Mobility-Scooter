@@ -4,10 +4,7 @@
 The focus for NSF REU Summer 2022 is to make the steps to create a multi-modal model that is capable of predicting the a binary/percentage riskiness if an individual should use a Mobility Scooter. The multi-modal would contain accelerometer, gyroscope, and heart rate data.
 
 ## GitHub Organization
-While making this realized some individuals like finding relevant instructions/details 
-based on what folder its in (ex. Data collection instructions in the data folder), but if
-you want to simply Find Command (Ctrl + F) everything then just look into TOC.md. Wanted
-to note this out of convenience -Marc
+Each folder has README.md description relating to its folder (ex. Data processing instructions in the data folder)
 
 ## Future Work
 Issues that prevailed in the project that were not resolved as they were deemed just minor
@@ -18,7 +15,7 @@ spare time to fix any of the problems
 Gimbal may need stiffer extender as while doing data collection, it lowers if the driver
 is a bit rougher, so a permanent issue is needed. We (SUM 2022 peeps) used chopsticks
 to prop it up, but obviously that is not the best solution to be made.
-- [ ] _**Raspberry Pi inconsistent data collection frequency:**_\
+- [x] _**Raspberry Pi inconsistent data collection frequency:**_\
 For the data collection, there was 2 raspberry pis we collected from. We tried to compare
 the data that was collected together, but an issue that occurred is that Raspberry Pi B (the pi
 that was put on the back of the Mobility Scooter) frequency of collecting data inconsistently
@@ -41,7 +38,7 @@ How the csv files are extracted from the raspberry pis is through discord. We ju
 all the files from that day into a discord channel then later move it into the github. 
 Obviously better way to do it, but due to the dynamics of our group just knowing how to 
 move things fast in discord we just stuck to this method.
-- [ ] _**Code is slow when recording data into CSV file**_\
+- [x] _**Code is slow when recording data into CSV file**_\
 When it comes to data collection, at the end of each run up to 15+ seconds of the last
 seconds recorded will not be inputted into the csv file. To avoid this can create a
 conditional in the code where the code is not stopped until all the data is inputted.

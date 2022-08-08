@@ -14,3 +14,19 @@ convert and organize json file for Polar H9 heart rate sensor. At the moment the
 a way to quickly export a csv file without the need for this code. If anything this is more if you can only
 extract json file and not the csv file then use this code. 
 
+# Machine Learning Models
+Wanted to clarify a couple of issues that is happening with the models
+First issue is that labels were distinguished with numbers 1-5 when we were labeling the
+data, but the models start counting at 0. So instead of a output layer's nuerons equal
+to the amount of features it also added an extra layer. Although this did not seem to stop
+the model from working as intended, it becomes a nuisance when you make the confusion model
+that REQUIRES the labelling to start from 0. So in other words, **when you label start from
+0 and not 1 if you mimic the way I made my models.** If you also try to use older data,
+it has flaws in labels relating to sudden acceleration and would need to fix the labeling as
+it was 1-5 not 0-4.
+
+Another thing to note, **Tensorboard**. The models can be handy and gives decent images of
+density of data, but if you are CPP student using onedrive on your computer then have to put 
+files in a place where the CPP OneDrive is not in the file pathway.
+
+
