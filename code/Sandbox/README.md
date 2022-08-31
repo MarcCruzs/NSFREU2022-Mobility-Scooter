@@ -6,7 +6,7 @@ working with and seemed that I didn't need a large batch size. For neurons in hi
 from experience it is a parameter that alters the possible accuracy by a good amount. To figure
 out the right amount, had to do trial and error. Would start from 16,32,64,128, and 256. I
 assume there is a better method to find the right amount, but this is what I did to slowly
-find the amount that makes the best accuracy. 
+find the amount that makes the best accuracy. -Marc
 
 ## CSV files
 - Combo_A_Poster.csv contains all class labels
