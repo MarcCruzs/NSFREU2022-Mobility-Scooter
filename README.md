@@ -10,7 +10,8 @@ Each folder has README.md description relating to its folder (ex. Data processin
 Issues that prevailed in the project that were not resolved as they were deemed just minor
 inconveniences. Problems stated here are fixable issues that can help make different
 stages in the project faster. I recommend looking over the issues to see if there is
-spare time to fix any of the problems
+spare time to fix any of the issues. **NOTE** Be sure to check the end of this README.md file
+as it describes some failed attempts that can be avoided or refined upon.
 - [ ] _**Gimbal needs stiffer extender:**_\
 Gimbal may need stiffer extender as while doing data collection, it lowers if the driver
 is a bit rougher, so a permanent issue is needed. We (SUM 2022 peeps) used chopsticks
@@ -129,3 +130,15 @@ as possible to make it easier for the time you will have on this project.
 large heads.
 - Cheap paint is not a good way to make a rough surface for sticking velcro onto. Did
 this cause velcro sticky part does not stay on smooth surfaces. 
+- For the labeling for data we messed up doing class label 'Sudden Acceleration' as we made an assumption
+to label the data that relates to the first four seconds of the driver doing acceleration.
+Assumption was made as we first tested out the mobility scooter it felt to get to its max
+speed in 4 seconds. But we should have labeled only the first 1-2 seconds instead of 4. According to the 
+confusion matrix (a way to check the performance of the model) the 'sudden acceleration'
+class labels seems to have a lower true positives compared to the others and a lower F1
+score. 
+- Check in with the kinesiology part of the project. (For the summer, it was Dr. Mai and
+her grad student Michihito ichihara). We recorded side view and front view of the driver 
+as per request of this team. The two views are supposed to be to used to use as 
+verification of the drivers body stability. Using this verification we can create a ground
+truth for the end goal (Risky or not risky). 
