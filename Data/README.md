@@ -40,7 +40,11 @@ Steps:
 1. Extract the CSV Files to whatever day you are trying to start preprocessing. Can do this with installing the github desktop and using the external editor to grab specific CSV files. (There is likely a better method to extract specific files, but this seems to work for Marc)
 2. Extract the video(s) that correspond to what CSV file(s) that you are planning to preprocess. Will use the video(s) to help label the data with 5 class labels: 
 
-*Sudden Acceleration* (1), *Sudden Right Turn* (2), *Sudden Left Turn* (3), *Sudden Break* (4), and *Normal* (5)
+- *Sudden Acceleration* (1)
+- *Sudden Right Turn* (2)
+- *Sudden Left Turn* (3)
+- *Sudden Break* (4)
+- *Normal* (5)
 
 3. Create a table in app (ex: excel, doc, word, etc) with label (1 Sudden Acceleration) (2 Sudden Right) (3 Sudden Left) (4 Sudden Break) (5 Normal) 
 
